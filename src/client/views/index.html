@@ -1,0 +1,59 @@
+    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+        <head>
+            <meta charset="utf-8">
+            <title>Project 4</title>
+
+        </head>
+
+        <body>
+
+            <header>
+                <div class="">
+                    Evaluate a News Article with Natural Language Processing
+                </div>
+                <div class="">
+                    Project 4
+                </div>
+            </header>
+
+            <main>
+                <section>
+                    <form class="" onsubmit="return handleSubmit(event)">
+                        <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
+                        <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                    </form>
+                <section>
+
+                <section>
+                    <strong>Form Results:</strong><br>
+
+                    <p>Polarity:</p>
+                    <div id="polarity"></div>
+                    <p>Subjectivity:</p>
+                    <div id="subjectivity"></div>
+                    <p>Text:</p>
+                    <div id="text"></div>
+                    <p>Polarity Confidence: </p>
+                    <div id="polarityconfidende"></div>
+                    <p>Subjectivity Confidence:</p>
+                    <div id="subjectivityconfidence">Subjectivity Confidence: </div>
+                </section>
+            </main>
+
+            <footer>
+                <p>Udacity Front End Development.</p>
+            </footer>
+
+            <script>
+                // Check that service workers are supported
+                if ('serviceWorker' in navigator) {
+                    // Use the window load event to keep the page load performant
+                    window.addEventListener('load', () => {
+                        navigator.serviceWorker.register('/service-worker.js');
+                    });
+            }
+           </script>
+
+        </body>
+    </html>
